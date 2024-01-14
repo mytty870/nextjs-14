@@ -1,6 +1,8 @@
 // `app/layout.tsx` が Next.js の ルート
 import '@/app/ui/global.css';
 
+import { inter } from '@/app/ui/fonts'
+
 export default function RootLayout({
   children,
 }: {
@@ -8,7 +10,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   );
 }
