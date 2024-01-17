@@ -26,7 +26,6 @@ const links = [
 export default function NavLinks() {
   // usePathname() は hook のため、'use client' を記載する必要がある
   const pathName = usePathname();
-  console.log(pathName)
   return (
     <>
       {links.map((link) => {
